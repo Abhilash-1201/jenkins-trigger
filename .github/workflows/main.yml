@@ -1,0 +1,17 @@
+name: trigger jenkins job
+on: [push]
+jobs:
+
+  build:
+    name: Build
+    runs-on: self-hosted
+    steps:
+    - name: Trigger jenkins job
+      uses: estherk0/jenkins-trigger@main
+      with:
+        url: ${{ secrets.JENKINS_URL }}
+        job_name: "GitHub Actions"
+        user_name: ${{ secrets.JENKINS_USER }}
+        api_token: ${{ secrets.JENKINS_TOKEN }}
+        wait: "true"
+        timeout: "1000"
