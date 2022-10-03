@@ -10,7 +10,7 @@ jobs:
       uses: Abhilash-1201/jenkins-trigger@master
       with:
         url: ${{ secrets.JENKINS_URL }}
-        job_name: "GitHub _Jenkins_Job"
+        job_name: "GitHubtest"
         user_name: ${{ secrets.JENKINS_USER }}
         api_token: ${{ secrets.JENKINS_TOKEN }}
         wait: "true"
