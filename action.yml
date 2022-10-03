@@ -32,5 +32,5 @@ inputs:
     default: "600"
   
 runs:
-  using: 'jenkinsfile'
-  entrypoint: 'Jenkinsfile'
+  using: node16
+  entrypoint: Jenkinsfile
