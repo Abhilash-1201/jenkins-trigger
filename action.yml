@@ -33,4 +33,4 @@ inputs:
   
 runs:
   using: 'jenkinsfile'
-  main: 'Jenkinsfile'
+  RUN: 'Jenkinsfile'
