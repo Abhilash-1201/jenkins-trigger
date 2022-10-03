@@ -13,11 +13,11 @@ pipeline{
                     def scannerHome = tool 'sonarqube-scanner';
                     withSonarQubeEnv(credentialsId: 'sonarqube_access_token'){
                         sh "${tool("sonarqube-scanner")}/bin/sonar-scanner \
-                        -Dsonar.projectKey=nodejs \
+                        -Dsonar.projectKey=nodejss \
                         -Dsonar.sources=. \
                         -Dsonar.css.node=. \
-                        -Dsonar.host.url=http://18.224.141.153:9000 \
-                        -Dsonar.login=sqp_45ce02989fc85de8d32672a99b7692996177a2aa"
+                        -Dsonar.host.url=http://3.129.65.102:9000 \
+                        -Dsonar.login=sqp_9e322a6251f21abb7419281f8d9cf938185e4fd0"
                         
                     }
                 }
