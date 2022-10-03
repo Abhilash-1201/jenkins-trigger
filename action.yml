@@ -33,4 +33,4 @@ inputs:
   
 runs:
   using: docker
-  entrypoint: Dockerfile
+  image: Dockerfile
